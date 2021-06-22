@@ -1,0 +1,22 @@
+//main theme colors
+$font-color: #FFFFFF;
+$background-color: #000000;
+$background-gradient: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+$special-color: #7C6AFA;
+
+
+//imports
+@import './header';
+@import './hero';
+
+body {
+    position: relative;
+    margin: 0;
+    font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 32px;
+    color: $font-color;
+    min-height: 100vh;
+    background-color: $background-color;
+    padding: 40px 0;
+}
