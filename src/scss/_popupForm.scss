@@ -1,0 +1,54 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background: rgb(0 0 0 / 75%);
+  color: #83f4ff;
+}
+
+.modal {
+  position: relative;
+}
+
+#form {
+  width: 500px;
+  padding: 30px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid $special-color;
+  border-radius: 5px;
+  background-color: black;
+
+  input {
+    width: 300px;
+    margin-bottom: 10px;
+    padding: 5px;
+  }
+
+  input:last-child() {
+    margin-bottom: 30px;
+  }
+
+  label {
+    align-self: flex-start;
+  }
+}
+
+.close-modal {
+  font-size: 45px;
+  position: absolute;
+  top: 0;
+  right: -40px;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+}

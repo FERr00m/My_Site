@@ -5,5 +5,7 @@ import '../scss/style.scss';
 
 
 import header from './modules/header';
+import hero from './modules/hero';
 
 header();
+hero();

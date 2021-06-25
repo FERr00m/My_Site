@@ -98,7 +98,24 @@
 		</section>
 	</main>
 
+	<div class="overlay">
+		<div class="modal" id="order">
+			<div class="close-modal">&times;</div>
+			<form id="form">
+				<label for="name">Имя</label>
+				<input type="text" name="name" id="name" placeholder="Введите Ваше имя" required>
 
+				<label for="tel">Телефон</label>
+				<input type="tel" name="tel" id="tel" placeholder="Введите Ваш телефон" required>
+
+				<label for="email">Почта</label>
+				<input type="email" name="email" id="email" placeholder="Введите Ваш email" required>
+
+				<button type="submit">Отправить</button>
+				<input type="checkbox" name="policy" id="policy"><span>Я согласен с <a href="#">политикой конфидециальности</a></span>
+			</form>
+		</div>
+	</div>
 </body>
 
 </html>
