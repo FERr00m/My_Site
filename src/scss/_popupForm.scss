@@ -16,30 +16,37 @@
   position: relative;
 }
 
-#form {
-  width: 500px;
+.form {
+  width: 502px;
   padding: 30px;
   height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   border: 2px solid $special-color;
   border-radius: 5px;
   background-color: black;
-
+  &__title {
+    text-transform: uppercase;
+  }
   input {
     width: 300px;
-    margin-bottom: 10px;
-    padding: 5px;
-  }
-
-  input:last-child() {
-    margin-bottom: 30px;
+    padding: 10px;
   }
 
   label {
+    position: relative;
     align-self: flex-start;
   }
+}
+
+.form-name::after,
+.form-email::after {
+  position: absolute;
+  content: "*";
+  right: -10px;
+  top: 0;
 }
 
 .close-modal {
@@ -51,4 +58,43 @@
   width: 32px;
   height: 32px;
   text-align: center;
+}
+
+.field {
+  display: flex;
+  width: 100%;
+  margin: 15px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.submit {
+  padding: 10px;
+  border: 2px solid #7C6AFA;
+  border-radius: 5px;
+  background: $background-gradient;
+  cursor: pointer;
+  color: #FFFFFF;
+  font-size: 16px;
+  margin: 0 auto;
+  &:hover {
+    background: inherit;
+  }
+}
+
+.policy {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+input#policy {
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+}
+
+.policy-link {
+  text-decoration: underline;
+  cursor: pointer;
 }

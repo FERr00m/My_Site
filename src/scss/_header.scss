@@ -1,13 +1,18 @@
 .header {
+	position: fixed;
+	width: 100%;
   z-index: 1;
+	top: 0;
+	background: $background-gradient;
 }
 
 .navbar {
-  background: $background-gradient;
+  padding: 10px 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+	width: 1440px;
+	margin: 0 auto;
   border-radius: 10px;
 
   &__link {
@@ -22,9 +27,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+		width: 600px;
     &__list-item {
-      text-transform: uppercase;
-      margin-right: 26px;
+      text-transform: capitalize;
       font-size: 26px;
       &:hover {
         opacity: 0.5;
@@ -41,7 +46,7 @@
 }
 
 
-//day-night
+//day-night switch
 .toggle {
 	display: block;
 	text-align: center;

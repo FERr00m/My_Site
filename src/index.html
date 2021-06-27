@@ -30,7 +30,7 @@
 
 	<!-- header -->
 	<header class="header">
-		<div class="container">
+		
 			<nav class="navbar">
 				<a class="navbar__link" href="#">
 					<img class="navbar__logo" src="./img/header/logo.jpg" alt="logo" width="70">
@@ -40,8 +40,8 @@
 
 					<li class="navbar__navbar-list__list-item"><a href="#">главная</a></li>
 
-					<li class="navbar__navbar-list__list-item"><a href="#">услуги</a></li>
 					<li class="navbar__navbar-list__list-item"><a href="#">портфолио</a></li>
+					<li class="navbar__navbar-list__list-item"><a href="#">услуги</a></li>
 				</ul>
 
 				<div class="navbar__theme">
@@ -51,11 +51,13 @@
 					</div>
 				</div>
 			</nav>
-		</div>
+		
 	</header>
 
 	<!-- main -->
 	<main>
+
+		<!-- hero -->
 		<section class="hero">
 
 			<div class="container hero__hero-bg">
@@ -96,24 +98,148 @@
 			</div>
 
 		</section>
+
+		<section class="portfolio">
+			<div class="container">
+				<h2 class="portfolio__title">Мои работы</h2>
+
+				<div class="slider">
+					<div class="sidebar">
+						<div class="sidebar-bg-1">
+							<h1>Calculator</h1>
+							<p>HTML / CSS / JS</p>
+						</div>
+
+						<div class="sidebar-bg-2">
+							<h1>Willberries</h1>
+							<p>HTML / CSS / Bootstrap / JS</p>
+						</div>
+
+						<div class="sidebar-bg-3">
+							<h1>Pulse</h1>
+							<p>HTML / CSS / JS / JQ</p>
+						</div>
+
+						<div class="sidebar-bg-4">
+							<h1>Uber</h1>
+							<p>HTML / CSS / JS</p>
+						</div>
+
+						<div class="sidebar-bg-5">
+							<h1>Relax Live</h1>
+							<p>HTML / CSS / JS</p>
+						</div>
+
+						<div class="sidebar-bg-6">
+							<h1>MrDonalds</h1>
+							<p>React & Firebase</p>
+						</div>
+
+						<div class="sidebar-bg-7">
+							<h1>3dGlo</h1>
+							<p>HTML / CSS / JS</p>
+						</div>
+					</div>
+					<div class="main-slide">
+						<div class="site glo">
+							<div class="more">
+								<a href="./portfolio/3dGlo/index.html">Посмотреть</a>
+							</div>
+						</div>
+
+						<div class="site mr-donalds">
+							<div class="more">
+								<a href="https://mrdonalds-18c53.web.app">Посмотреть</a>
+							</div>
+						</div>
+
+						<div class="site relax">
+							<div class="more">
+								<a href="./portfolio/relax/index.html">Посмотреть</a>
+							</div>
+						</div>
+
+						<div class="site uber">
+							<div class="more">
+								<a href="./portfolio/uber/index.html">Посмотреть</a>
+							</div>
+						</div>
+
+						<div class="site pulse">
+							<div class="more">
+								<a href="./portfolio/pulse/index.html">Посмотреть</a>
+							</div>
+						</div>
+
+						<div class="site willberries">
+							<div class="more">
+								<a href="./portfolio/willberrys/index.html">Посмотреть</a>
+							</div>
+						</div>
+
+						<div class="site calculator">
+							<div class="more">
+								<a href="./portfolio/calculator/index.html">Посмотреть</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="controls">
+						<button class="down-button buttons">
+							&#9660;
+						</button>
+						<button class="up-button buttons">
+							&#9650;
+						</button>
+					</div>
+				</div>
+			</div>
+			
+		</section>
+
+
 	</main>
 
+
+<!-- popups -->
 	<div class="overlay">
 		<div class="modal" id="order">
 			<div class="close-modal">&times;</div>
-			<form id="form">
-				<label for="name">Имя</label>
-				<input type="text" name="name" id="name" placeholder="Введите Ваше имя" required>
+			<form id="form" class="form">
+				<span class="form__title">Оставить заявку</span>
+				<div class="field">
+					<label for="name" class="form-name">Имя</label>
+					<input type="text" name="name" id="name" placeholder="Введите Ваше имя" required>
+				</div>
+				
+				<div class="field">
+					<label for="tel">Телефон</label>
+					<input type="tel" name="tel" id="tel" placeholder="Введите Ваш телефон">
+				</div>
+				
+				<div class="field">
+					<label for="email" class="form-email">Почта</label>
+					<input type="email" name="email" id="email" placeholder="Введите Ваш email" required>
+				</div>
+				
+				<div class="field">
+					<button class="submit" type="submit">Отправить</button>
+				</div>
+				
+				
+				<div class="policy">
+						<input type="checkbox" name="policy" id="policy">
+						<div>
+							Я соглашаюсь с&nbsp;<span class="policy-link">политикой конфидециальности</span>
+						</div>
+					
+				</div>
 
-				<label for="tel">Телефон</label>
-				<input type="tel" name="tel" id="tel" placeholder="Введите Ваш телефон" required>
-
-				<label for="email">Почта</label>
-				<input type="email" name="email" id="email" placeholder="Введите Ваш email" required>
-
-				<button type="submit">Отправить</button>
-				<input type="checkbox" name="policy" id="policy"><span>Я согласен с <a href="#">политикой конфидециальности</a></span>
 			</form>
+		</div>
+
+		<div class="modal" id="policy">
+			<!-- здесь будет политика конфидециальности -->
 		</div>
 	</div>
 </body>

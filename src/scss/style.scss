@@ -9,6 +9,7 @@ $special-color: #7C6AFA;
 @import './header';
 @import './hero';
 @import './popupForm';
+@import './portfolio';
 
 body {
     position: relative;
@@ -19,7 +20,7 @@ body {
     color: $font-color;
     min-height: 100vh;
     background-color: $background-color;
-    padding: 40px 0;
+    
 }
 
 .overlay {
