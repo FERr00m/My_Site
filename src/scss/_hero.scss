@@ -5,7 +5,7 @@
   min-height: 800px;
   
   &__hero-bg {
-    min-height: 675px;
+    min-height: calc(100vh - 200px);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -182,4 +182,76 @@
   
 }
 
+//light-theme
+.hero.light-theme {
+  color: $font-color-light;
+  &::after {
+    background-color: #7abdf2;
+  }
+}
 
+.hero-wrap.light-theme {
+    .web {
+      color: #000;
+      text-shadow:
+        0 0 4px #76bbf6,
+        0 0 11px #76bbf6,
+        0 0 19px #76bbf6;
+      
+      animation: none;
+      
+    }
+    .sites {
+      color: #000;
+      text-shadow:
+        0 0 4px #76bbf6,
+        0 0 11px #76bbf6,
+        0 0 19px #76bbf6;
+    }
+}
+
+.contacts.light-theme {
+
+  .contacts__btn {
+    border: 2px solid $special-color-light;
+    background: $background-gradient-light;
+    &:hover {
+      background: inherit;
+      color: $font-color-light;
+    }
+  }
+
+  .contacts__tel, .contacts__mail {
+  
+    &:hover {
+      color: $special-color-light;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: $background-gradient-light;
+      transition: width 200ms;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+  }
+
+  .contacts__tel {
+    background: url('../img/hero/icon-phone-black.svg') no-repeat;
+    background-position: left;
+    
+  }
+
+  .contacts__mail {
+    background: url('../img/hero/icon-email-black.svg') no-repeat;
+    background-position: left;
+    
+  }
+}

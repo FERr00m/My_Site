@@ -274,3 +274,11 @@
 		}
 	}
 
+//light-theme
+.header.light-theme {
+	background: $background-gradient-light;
+}
+
+.header.light-theme a {
+	color: #fff;
+}

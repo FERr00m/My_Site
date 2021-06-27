@@ -4,12 +4,21 @@ $background-color: #000000;
 $background-gradient: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
 $special-color: #7C6AFA;
 
+//light-theme colors
+$font-color-light: #000;
+$background-color-light: #f5f6f8;
+$background-gradient-light: linear-gradient(94.26deg, #0b0c23 9.51%, #7abdf2 90.23%);
+$special-color-light: #000;
 
 //imports
 @import './header';
 @import './hero';
 @import './popupForm';
 @import './portfolio';
+
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     position: relative;
@@ -25,4 +34,10 @@ body {
 
 .overlay {
     visibility: hidden;
+}
+
+//light-theme
+body.light-theme {
+    background: $background-color-light;
+    
 }
