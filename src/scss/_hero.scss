@@ -17,11 +17,11 @@
     height: 200px;
     width: 100%;
     bottom: 0;
-    background-color: #0b0c23;
-    background-image: url('../img/hero/bg-tags.svg');
-    background-position: center;
-    background-repeat: no-repeat;
-    border-top: 2px solid #5053a8;
+    background: linear-gradient(180deg, #000 0%, rgb(124 106 250) 170%);
+    // background-image: url('../img/hero/bg-tags.svg');
+    // background-position: center;
+    // background-repeat: no-repeat;
+    
   }
 }
 
@@ -96,19 +96,6 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 75px;
-
-  &__btn {
-    padding: 20px;
-    border: 2px solid $special-color;
-    border-radius: 5px;
-    background: $background-gradient;
-    cursor: pointer;
-    color: $font-color;
-    font-size: 16px;
-    &:hover {
-      background: inherit;
-    }
-  }
 
   &__tel, &__mail {
     position: relative;

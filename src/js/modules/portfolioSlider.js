@@ -7,12 +7,16 @@ const portfolioSlider = () => {
   slider = document.querySelector('.slider'),
   btns = document.querySelectorAll('.buttons');
 
+const arr = [];
 
-btns.forEach(btn => {
-  btn.addEventListener('mouseleave', () => {
+arr.push(...btns);
+arr.push(mainSlide);
+
+arr.forEach(item => {
+  item.addEventListener('mouseleave', () => {
     startSlide();
   })
-  btn.addEventListener('mouseenter', () => {
+  item.addEventListener('mouseenter', () => {
     clearInterval(interval)
   })
 })

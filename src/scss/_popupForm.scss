@@ -68,20 +68,6 @@
   align-items: center;
 }
 
-.submit {
-  padding: 10px;
-  border: 2px solid #7C6AFA;
-  border-radius: 5px;
-  background: $background-gradient;
-  cursor: pointer;
-  color: #FFFFFF;
-  font-size: 16px;
-  margin: 0 auto;
-  &:hover {
-    background: inherit;
-  }
-}
-
 .policy {
   display: flex;
   align-items: center;

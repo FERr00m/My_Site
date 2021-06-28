@@ -1,0 +1,26 @@
+.btn {
+  padding: 20px;
+  border: 2px solid $special-color;
+  border-radius: 5px;
+  background: $background-gradient;
+  cursor: pointer;
+  color: $font-color;
+  font-size: 16px;
+  transition: all 0.2s ease-in;
+  &:hover {
+    background: inherit;
+    color: $special-color;
+  }
+
+  &__submit {
+    padding: 10px;
+    margin: 0 auto;
+    transition: none;
+  }
+
+  &__show {
+    padding: 20px;
+    font-size: 65px;
+  }
+}
+

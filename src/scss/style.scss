@@ -11,6 +11,7 @@ $background-gradient-light: linear-gradient(94.26deg, #0b0c23 9.51%, #7abdf2 90.
 $special-color-light: #000;
 
 //imports
+@import './buttons';
 @import './header';
 @import './hero';
 @import './popupForm';
@@ -39,5 +40,4 @@ body {
 //light-theme
 body.light-theme {
     background: $background-color-light;
-    
 }

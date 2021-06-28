@@ -1,10 +1,19 @@
 .portfolio {
-  min-height: 800px;
-  padding-top: 50px;
+  position: relative;
+  min-height: 1000px;
+  padding-top: 200px;
   &__title {
     font-size: 50px;
     text-align: center;
     margin-bottom: 80px;
+  }
+  &::before {
+    position: absolute;
+    content: "";
+    height: 200px;
+    width: 100%;
+    top: 0;
+    background: linear-gradient(0deg, #000 0%, rgb(124 106 250) 170%);
   }
 }
 
@@ -79,9 +88,6 @@
   opacity: 0;
   background-color: rgba(0, 0, 0, 0.7);
   visibility: hidden;
-  a {
-    font-size: 65px;
-  }
 }
 
 .buttons {
@@ -126,7 +132,7 @@
 }
 
 .sidebar-bg-1 {
-  background: linear-gradient(229.99deg, #f6f6f6 -26%, #bb9790 145%);
+  background: linear-gradient(229.99deg, #f6f6f6 -26%, #000 145%);
 }
 
 .sidebar-bg-2 {
@@ -157,7 +163,6 @@
 
 .glo {
   background: url('../img/portfolio/3dGlo.jpg');
-  filter: brightness(400%);
 }
 
 .mr-donalds {
@@ -170,7 +175,6 @@
 
 .uber {
   background: url('../img/portfolio/uber.jpg');
-  filter: brightness(200%);
 }
 
 .pulse {
