@@ -1,19 +1,11 @@
 .portfolio {
   position: relative;
   min-height: 1000px;
-  padding-top: 200px;
+  padding-top: 90px;
   &__title {
     font-size: 50px;
     text-align: center;
     margin-bottom: 80px;
-  }
-  &::before {
-    position: absolute;
-    content: "";
-    height: 200px;
-    width: 100%;
-    top: 0;
-    background: linear-gradient(0deg, #000 0%, rgb(124 106 250) 170%);
   }
 }
 
@@ -179,6 +171,10 @@
 
 .pulse {
   background: url('../img/portfolio/pulse.jpg');
+  filter: brightness(150%);
+  &:hover {
+    filter: brightness(100%);
+  }
 }
 
 .willberries {
@@ -187,4 +183,29 @@
 
 .calculator {
   background: url('../img/portfolio/calculator.jpg');
+}
+
+//===================
+
+//light-theme
+.portfolio.light-theme {
+  .portfolio__title {
+    color: $font-color-light;
+  }
+}
+
+.slider.light-theme {
+  box-shadow: 0 0 20px $special-color-light;
+}
+
+.main-slide.light-theme {
+
+  .more__btn {
+    border: 2px solid $special-color-light;
+    background: $background-gradient-light;
+    &:hover {
+      background: #fff;
+      color: $font-color-light;
+    }
+  }
 }

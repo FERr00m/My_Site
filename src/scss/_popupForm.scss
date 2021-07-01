@@ -41,7 +41,6 @@
   }
 }
 
-.form-name::after,
 .form-email::after {
   position: absolute;
   content: "*";
@@ -83,4 +82,26 @@ input#policy {
 .policy-link {
   text-decoration: underline;
   cursor: pointer;
+}
+
+//==============
+
+//light-theme
+.modal.light-theme .form{
+  border: 2px solid $special-color-light;
+  background-color: $background-color-light;
+  color: $font-color-light;
+}
+
+.modal.light-theme .close-modal {
+  color: $font-color;
+}
+
+.modal.light-theme .submit {
+  border: 2px solid $special-color-light;
+  background: $background-gradient-light;
+    &:hover {
+      background: #fff;
+      color: $font-color-light;
+    }
 }

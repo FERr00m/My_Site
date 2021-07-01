@@ -161,19 +161,22 @@
   }
   &__list-item:hover {
     transform: scale(1.3);
-    transition: all 0.3s ease-in;
+    transition: box-shadow 0.3s ease-in;
     box-shadow: 0 0 15px $special-color;
     border-radius: 50%;
-    box-shadow: 0 0 15px $special-color;
   }
   
 }
+
+//==========================
 
 //light-theme
 .hero.light-theme {
   color: $font-color-light;
   &::after {
-    background-color: #7abdf2;
+    background: linear-gradient(
+180deg
+, #f5f6f8 0%, #7abdf2 170%);
   }
 }
 
@@ -184,8 +187,8 @@
         0 0 4px #76bbf6,
         0 0 11px #76bbf6,
         0 0 19px #76bbf6;
-      
-      animation: none;
+        
+      animation: flicker-light 1.5s infinite alternate;
       
     }
     .sites {
@@ -195,6 +198,26 @@
         0 0 11px #76bbf6,
         0 0 19px #76bbf6;
     }
+
+    @keyframes flicker-light {
+    
+      0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    
+          text-shadow:
+          0 0 4px #76bbf6,
+          0 0 11px #76bbf6,
+          0 0 19px #76bbf6;
+      
+      }
+      
+      20%, 24%, 55% {        
+          text-shadow: none;
+      }    
+    }
+}
+
+.my-photo.light-theme {
+  box-shadow: 0 0 20px $special-color-light;
 }
 
 .contacts.light-theme {
@@ -241,4 +264,20 @@
     background-position: left;
     
   }
+}
+
+.socials.light-theme {
+  .socials__list-item a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px $special-color-light;
+  }
+  .socials__list-item:hover {
+    transform: scale(1.3);
+    transition: box-shadow 0.3s ease-in;
+    box-shadow: 0 0 15px $special-color-light;
+    border-radius: 50%;
+  }
+  
 }
