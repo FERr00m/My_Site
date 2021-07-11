@@ -6,6 +6,8 @@ const header = () => {
 
   //hero section
   const header = document.querySelector('.header'),
+    burger = header.querySelector('.burger'),
+    navBarList = header.querySelector('.navbar__navbar-list'),
     hero = document.querySelector('.hero'),
     heroWrap = hero.querySelector('.hero-wrap'),
     contacts = heroWrap.querySelector('.contacts'),
@@ -22,6 +24,8 @@ const header = () => {
   //hero =>
   arr.push(document.body);
   arr.push(header);
+  arr.push(burger);
+  arr.push(navBarList);
   arr.push(hero);
   arr.push(heroWrap);
   arr.push(contacts);
@@ -44,6 +48,16 @@ const header = () => {
       item.classList.remove('light-theme')
     });
     
+  })
+
+  burger.addEventListener('click', () => {
+    navBarList.classList.toggle('show');
+  })
+
+  navBarList.addEventListener('click', e => {
+    if (e.target.tagName === 'A') {
+      navBarList.classList.remove('show');
+    }
   })
 
   
