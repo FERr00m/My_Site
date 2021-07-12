@@ -18,7 +18,7 @@ const header = () => {
     slider = portfolio.querySelector('.slider'),
     mainSlide = portfolio.querySelector('.main-slide'),
   //popupForm
-    modal = document.querySelector('.modal');
+    modals = document.querySelectorAll('.modal');
 
 
   //hero =>
@@ -36,7 +36,7 @@ const header = () => {
   arr.push(slider);
   arr.push(mainSlide);
   //popupForm =>
-  arr.push(modal);
+  arr.push(...modals);
 
   
   dayNight.addEventListener('click', e => {

@@ -52,7 +52,7 @@
   font-size: 45px;
   position: absolute;
   top: 0;
-  right: -40px;
+  right: 0;
   cursor: pointer;
   width: 32px;
   height: 32px;
@@ -84,17 +84,30 @@ input#policy {
   cursor: pointer;
 }
 
+.policy-modal {
+  display: flex;
+  max-width: 500px;
+  padding: 10px;
+  border: 2px solid $special-color;
+  border-radius: 5px;
+  background-color: black;
+  height: 70vh;
+  overflow-y:scroll;
+}
+
+
 //==============
 
 //light-theme
-.modal.light-theme .form{
+.modal.light-theme .form,
+.modal.policy-modal.light-theme {
   border: 2px solid $special-color-light;
   background-color: $background-color-light;
   color: $font-color-light;
 }
 
 .modal.light-theme .close-modal {
-  color: $font-color;
+  color: $font-color-light;
 }
 
 .modal.light-theme .submit {

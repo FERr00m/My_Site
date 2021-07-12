@@ -19,10 +19,6 @@
     width: 100%;
     bottom: 0;
     background: linear-gradient(180deg, #000 0%, rgb(124 106 250) 170%);
-    // background-image: url('../img/hero/bg-tags.svg');
-    // background-position: center;
-    // background-repeat: no-repeat;
-    
   }
 }
 
@@ -51,20 +47,15 @@
     font-weight: 400;
     .web {
       color: #fff;
-      animation: flicker 1.5s infinite alternate;
+      // animation: flicker 1.5s infinite alternate;
       
     }
-    .sites {
+    .sites, .web {
       color: #fff;
       text-shadow:
         0 0 4px #fff,
         0 0 11px #fff,
-        0 0 19px #fff,
-        0 0 40px $special-color,
-        0 0 80px $special-color,
-        0 0 90px $special-color,
-        0 0 100px $special-color,
-        0 0 150px $special-color;
+        0 0 19px #fff;
 
     }
     @keyframes flicker {
@@ -74,12 +65,7 @@
           text-shadow:
           0 0 4px #fff,
           0 0 11px #fff,
-          0 0 19px #fff,
-          0 0 40px $special-color,
-          0 0 80px $special-color,
-          0 0 90px $special-color,
-          0 0 100px $special-color,
-          0 0 150px $special-color;
+          0 0 19px #fff;
       
       }
       

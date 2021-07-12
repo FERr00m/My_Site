@@ -1,18 +1,26 @@
 const hero = () => {
   const contactsBtn = document.querySelector('.contacts__btn'),
-  overlay = document.querySelector('.overlay');
+  overlays = document.querySelectorAll('.overlay'),
+  overlayPolicy = document.querySelector('.overlay-policy');
   
   contactsBtn.addEventListener('click', () => {
-    console.log(1);
-    overlay.style.visibility = 'visible';
+    overlays[0].style.visibility = 'visible';
   });
 
-  overlay.addEventListener('click', e => {
-    if (e.target.matches('.overlay') ||
-        e.target.matches('.close-modal')) {
-      overlay.style.visibility = 'hidden';
-    }
+  overlays.forEach(item => {
+    item.addEventListener('click', e => {
+      if (e.target.matches('.overlay') ||
+          e.target.matches('.close-modal')) {
+            item.style.visibility = 'hidden';
+      }
+  
+      if (e.target.matches('.policy-link')) {
+        overlayPolicy.style.visibility = 'visible';
+      }
+    });
   });
+
+  
 };
 
 export default hero;
